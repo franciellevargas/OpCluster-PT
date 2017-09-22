@@ -1,5 +1,11 @@
 # Opcluster-PT
-Clustering of Aspects for Opinion Mining 
+Aspects Clustering of for Opinion Mining 
 
-The Opcluster-PT is clustering algoritm for aspect-based opinion mining. The algorithm was developed from master'degree in computer science at University of São Paulo - author: Francielle Alves Vargas and advisor: Thiago A. S. Pardo. 
+The Opcluster-PT is clustering algoritm for aspect-based opinion mining. The algorithm was developed from master'degree in computer science and computational mathematics at University of São Paulo.
+
+Author: Francielle Alves Vargas and Advisor: Thiago A. S. Pardo. 
+
+Master thesis link: 
+
+
 
