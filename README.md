@@ -5,7 +5,7 @@ The Opcluster-PT is clustering algoritm for aspect-based opinion mining. The alg
 
 Author: Francielle Alves Vargas and Advisor: Thiago A. S. Pardo. 
 
-Master thesis link: 
+Master thesis link: http://conteudo.icmc.usp.br/pessoas/taspardo/Dissertation2017-Vargas.pdf
 
 
 
