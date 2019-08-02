@@ -2,9 +2,8 @@
 import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
-#---------------------------------------------------------------------------------------------------
 
-#Bibliotecas----------------------------------------------------------------------------------------
+#Libraries---------------------------------------------------------------------------------
 import rdflib
 import string
 import os
@@ -15,9 +14,8 @@ import unicodedata
 from BeautifulSoup import BeautifulSoup
 from bs4 import BeautifulSoup
 from rdflib import Graph, URIRef, Literal
-#-----------------------------------------------------------------------------------------------------
 
-#Declarações de vetor, dicionários e grafo------------------------------------------------------------
+#Vector, Dictionaries and Graph------------------------------------------------------------
 part = rdflib.term.URIRef('http://ontopt.dei.uc.pt/OntoPT.owl#parteDe')
 temP = rdflib.term.URIRef('http://ontopt.dei.uc.pt/OntoPT.owl#temParte')
 resA = rdflib.term.URIRef('http://ontopt.dei.uc.pt/OntoPT.owl#resultadoDaAccao')
@@ -33,25 +31,24 @@ test2 = []
 n_pos = 0
 pos = ''
 unitarios = []
-#-----------------------------------------------------------------------------------------------------
 
-#LÊ A LISTA DE ASPECTOS-------------------------------------------------------------------------------
-with open('aspectos_reli.txt') as f:
+
+#Reading the list of aspects (reading to input)--------------------------------------------------------
+with open('exemplo_entrada.txt') as f:
     aspectos = f.read().lower().splitlines()
-#------------------------------------------------------------------------------------------------------
 
 
-#FUNÇÕES-----------------------------------------------------------------------------------------------
-def busca_sinonimo(item_sinonimo):#--------------------------------------------------------------------
-    #Relações do ONTO.pt que serão acessadas para busca do aspecto
+#Set of functions---------------------------------------------------------------------------------------
+def busca_sinonimo(item_sinonimo):
+    #Searching relatiosn into OntoPT graph = synonyms
     ontosim_busca = []
     g = rdflib.Graph()
-    g.parse('/home/francielle/python/OntoPT.rdf')
+    g.parse('OntoPT.rdf')
     for s,p,o in g:
         entrada = rdflib.term.Literal(item_sinonimo)
         if entrada == o:
             temp1 = s
-            #busca e guarda os sinônimos do aspecto
+            #Search and save the graph's match with the input item
             for s1,p1,o1 in g:
                 if s1 == temp1:
                     if p1 == ref:
@@ -59,25 +56,25 @@ def busca_sinonimo(item_sinonimo):#---------------------------------------------
                         ontosim_busca.append(sinonimo)
 
     return ontosim_busca
-#-----------------------------------------------------------------------------------------------------
 
-def busca_onto(onto_all):#----------------------------------------------------------------------------
-    #Relações do ONTO.pt que serão acessadas para busca do aspecto
+def busca_onto(onto_all):
+    #Searching relatiosn into OntoPT graph = synonyms and hyperonym / hyponym and Meronyms / Holonyms and ResultadodaaçãoDe e ServeParaAccao
     onto_busca = []
     g_new = rdflib.Graph()
-    g_new.parse('/home/francielle/python/OntoPT.rdf')
+    g_new.parse('OntoPT.rdf')
     for s0,p0,o0 in g_new:
         entrada_new = rdflib.term.Literal(onto_all)
         if entrada_new == o0:
             temp10 = s0
-            #busca e guarda os sinônimos do aspecto
+            
+            #synonyms
             for s10,p10,o10 in g_new:
                 if s10 == temp10:
                     if p10 == ref:
                         sinonimo_new = o10.value
                         onto_busca.append(sinonimo_new)
                         
-                    #Merônimos/holônimos e Hiperônimo/Hipônimo e ResultadodaaçãoDe e ServeParaAccao
+                    #Meronyms / Holonyms and hyperonym / hyponym and ResultadodaaçãoDe e ServeParaAccao
                     if (p10 in part) or (p10 in temP) or (p10 in resA) or p10 in serA: 
                         temp20 = o10                      
                         for s20,p20,o20 in g_new:
@@ -86,49 +83,44 @@ def busca_onto(onto_all):#------------------------------------------------------
                                 onto_busca.append(hierarquia)
 
     return onto_busca
-#--------------------------------------------------------------------------------------------------------
 
-#--------------------------------------------------------------------------------------------------------
-
-def busca_corp(item_corp):#------------------------------------------------------------------------------
+def busca_corp(item_corp):
+    #Searching the itens into Corp file processing
     bb = []
     aux0 = []
     item_corp_new = ''
     included_extenstions = []
     menU = 'Mencoes_Unicas'
     sn = 'sn'
-    #############PRECISA APONTAR ONDE ESTÁ OS ARQUIVOS (xml) PROCESSADOS PELO CORP AQUI!!!!###############
-    relevant_path = '/home/francielle/python/corp/corp_xml_reli'
+    #I'ts necessary to set where are the files (XML) processing by CORP
+    relevant_path = 'corp_xml_reli'
     included_extenstions = ['xml']
 
-    #Tratamento para importar apenas arquivos não ocultos e não temporários
     file_names = [fn for fn in os.listdir(relevant_path)
                 if any(fn.endswith(ext) for ext in included_extenstions)]
 
     for fil in sorted(file_names):
-        os.chdir(r'/home/francielle/python/corp/corp_xml_reli')
+        os.chdir(r'corp_xml_reli')
         fil2 = open(fil)
         corp = BeautifulSoup(fil2, 'xml')
                 
-        #Pega o nÃºmero de clusters de cada arquivo, portanto o tamanho de clusters do documento
+        #Get the size of document clusters
         for item in corp:
             y = item.Cadeias.contents
             tam_lista = len(y)
             lista = range(tam_lista)
 
-            #Pego a quantidade de grupos de cadeias de todos os arquivos do diretÃ³rio
+            #I get the number of groups from all directory files (XML)
             for j in lista:
                 if item.Cadeias.contents[j].name is not None:
                             
-                    #Verifica se nenhuma cadeia Ã© "menÃ§Ã£o Ãºnica" e "sn" 
+                    #Checks if there ins't set of kind = "single mention" and "sn"
                     if item.Cadeias.contents[j].name != menU or item.Cadeias.contents[j].name != sn:
                         tam_lista1 = len(item.Cadeias.contents[j].contents)
                         lista2 = range(tam_lista1)
                                 
-                        #Limpa o vetor aux0
-
+                        
                         aux0[:] = []       
-                        #Pega o nÃºcleo de todos as cadeias formadas pelo corp de todos os arquivos do diretÃ³rio
                         for jj in lista2:
                             if item.Cadeias.contents[j].contents[jj].name is not None:
                                 aux0.append(item.Cadeias.contents[j].contents[jj].get('nucleo'))
@@ -140,12 +132,12 @@ def busca_corp(item_corp):#-----------------------------------------------------
                                     if ixi is not None:
                                         ixi1 = unicodedata.normalize('NFKD', ixi).encode('ascii','ignore')
 
-                                #Garante que cadeias de menções únicas não serão enquadradas
+                                #Ensures unique mention chains will not be framed
                                 if item.Cadeias.contents[j].name != menU:
                                     if item_corp_new_new == ixi1.lower(): 
                                         aux1 = item.Cadeias.contents[j].name
                                        
-                                        #Encontra os grupos de cadeias em que o aspecto está            
+                                        #Find the set groups where the aspect is           
                                         for jj in lista2:
                                             if item.Cadeias.contents[j].contents[jj].name is not None:
                                                 if item.Cadeias.contents[j].name == aux1:
@@ -153,14 +145,11 @@ def busca_corp(item_corp):#-----------------------------------------------------
                                                     corref = temp01.lower()
                                                     bb.append(corref)
     return bb
-#--------------------------------------------------------------------------------------------------------
 
-#Busca o item na base do Iltec de deverbais--------------------------------------------------------------
-def busca_deverbal(item_deverbal):
-    #Cria o dicionário de deverbais
-    with open('/home/francielle/python/deverbais1.txt') as d1:
+def busca_deverbal(item_deverbal): 
+    with open('deverbais1.txt') as d1:
         deverbais1 = d1.read().lower().splitlines()
-    with open('/home/francielle/python/deverbais2.txt') as d2:
+    with open('deverbais2.txt') as d2:
         deverbais2 = d2.read().lower().splitlines()
     dic1 = dict(zip(deverbais1, deverbais2))
     deb = collections.OrderedDict(sorted(dic1.items()))
@@ -173,14 +162,13 @@ def busca_deverbal(item_deverbal):
             if valor == str(item_deverbal):
                 deverbal = str(chave)
                 return deverbal
-#----------------------------------------------------------------------------------------------------------
 
-#----------------------------------------------------------------------------------------------------------
+
 def busca_estrangeirismo(item_estrangeiro):
     import string
-    with open('/home/francielle/python/estrangeirismo1.txt') as es1:
+    with open('estrangeirismo1.txt') as es1:
         estrangeirismo1 = es1.read().lower().splitlines()
-    with open('/home/francielle/python/estrangeirismo2.txt') as es2:
+    with open('estrangeirismo2.txt') as es2:
         estrangeirismo2 = es2.read().lower().splitlines()
     dic2 = dict(zip(estrangeirismo1, estrangeirismo2))
     est = collections.OrderedDict(sorted(dic2.items()))
@@ -193,14 +181,13 @@ def busca_estrangeirismo(item_estrangeiro):
             if valor1 == str(item_estrangeiro):
                 estrangeirismo = str(chave1)
                 return estrangeirismo
-#-------------------------------------------------------------------------------------------------------
 
-#----------------------------------------------------------------------------------------------------------
+
 def busca_diminutivo_aumentativo(item_dimiaum):
     import string
-    with open('/home/francielle/python/diminutivo&aumentativo1.txt') as dimia1:
+    with open('diminutivo_aumentativo1.txt') as dimia1:
         diminuaumet1 = dimia1.read().lower().splitlines()
-    with open('/home/francielle/python/diminutivo&aumentativo2.txt') as dimia2:
+    with open('diminutivo_aumentativo2.txt') as dimia2:
         diminuaumet2 = dimia2.read().lower().splitlines()
     dic3 = dict(zip(diminuaumet1, diminuaumet2))
     dimutivo_aumentativo = collections.OrderedDict(sorted(dic3.items()))
@@ -213,9 +200,7 @@ def busca_diminutivo_aumentativo(item_dimiaum):
             if valor2 == str(item_dimiaum):
                 diau = str(chave2)
                 return diau
-#-------------------------------------------------------------------------------------------------------
 
-#Remove valores repetidos de uma lista------------------------------------------------------------------
 def remove_repetidos(lista000):
     l = []
     for i1 in lista000:
@@ -224,22 +209,18 @@ def remove_repetidos(lista000):
     l.sort()
     return l
 
-#Remove valores de uma lista-----------------------------------------------------------------------------
+
 def remove_valores_da_lista(the_list, val):
         while val in the_list:
             the_list.remove(val)
 
-#Início--------------------------------------------------------------------------------------------------
-#Percorrer a lista de aspecto ordenada de acordo com a maior frequência
-#Utilizei a função 'reversed' porque há a necessidade de remover itens da lista estando iterando nela
-#se não utilizarmos, misteriosamente ele 'pula' um item da lista
-#---------------------------------------------------------------------------------------------------------
+##Start--------------------------------------------------------------------------------------------------
+
 for i in list(aspectos): 
-    #Limpa os valores das lista de "busca" e "busca_new" 
     busca[:] = []
     busca_new[:] = []
 
-    #ONTO-pt: Sinônimos / parte-todo / resultado_da_ação
+    #ONTO-PT
     busca = busca_onto(i)
 
     #CORP
@@ -247,16 +228,16 @@ for i in list(aspectos):
     for t111 in test[:]:
         busca.append(t111)
 
-    #DEVERBAIS-------------------------------------------------------------------------------------------
+    #DEVERBAIS
     busca.append(busca_deverbal(i)) 
 
-    #ESTRANGEIRISMO: lista de alguns estrangeirismo-------------------------------------------------------
+    #ESTRANGEIRISMO
     busca.append(busca_estrangeirismo(i))
 
-    #DIMINUTIVOS & AUMENTATIVOS: -------------------------------------------------------------------------
+    #DIMINUTIVOS & AUMENTATIVOS:
     busca.append(busca_diminutivo_aumentativo(i))
 
-    #SUBSTRING--------------------------------------------------------------------------------------------
+    #SUBSTRING
     for i2 in aspectos[:]:
         if (i in i2 and len(i) != len(i2)) or (i2 in i and len(i) != len(i2)):
             busca.append(i2)
@@ -264,7 +245,6 @@ for i in list(aspectos):
     #Itens que não foram encontrados em nenhuma das bases
     #busca.append(i)
 
-    #Remove repetidos-------------------------------------------------------------------------------------
     busca = remove_repetidos(busca)
     
     #Verifica a intersecção entre o vetor de busca e o vetor de aspectos----------------------------------
@@ -303,8 +283,7 @@ for i in list(aspectos):
                                 if aaa == bbb:
                                     grupo.append((i, aaa))
                                     remove_valores_da_lista(aspectos, aaa)
-
-    #------------------------------------------------------------------------------------------------                                     
+                                  
         
     #Recupera a posição do último aspecto adicionado no vetor grupo
     pos = grupo[-1]
