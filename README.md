@@ -1,5 +1,5 @@
 # Opcluster-PT
-Aspects Clustering for Opinion Mining 
+An Automatic Opinion Similar Aspect Clustering Tool for Aspects-Based Opinion Mining / Sentiment Analysis. 
 
 The Opcluster-PT is an algorithm for clustering of implicit and explicit aspects. In this method, our particular interest lies on Clustering of implicit and explicit similar aspects in consumer reviews. For example, in the review passage “she considered the camera price very expensive”, the consumer employed the term “price” to evaluate an aspect of the camera; however, consumers might also use the terms “cost”, “value”, “investment”, etc. In addition, consumers may use implicit or explicit aspects to refer to the same aspect, e.g., the sentences “she got calls at the S˜ao Francisco river” and “working anywhere” have been employed in actual reviews to evaluate the (implicit) “signal” aspect of a smartphone. It is also interesting to notice that, in some domains, proper names may be employed to refer to the aspects. For instance, the proper names “Sony” and “Nikon” may be used to evaluate the “product brand” aspect of digital cameras.
 
