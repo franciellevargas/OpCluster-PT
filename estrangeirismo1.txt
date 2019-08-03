@@ -31,7 +31,6 @@ apartheid
 apfelstrudel
 aplomb
 apparatchik
-apparatchik
 appoggiatura
 apport
 aquaplaning
@@ -293,7 +292,7 @@ croquet
 croquis
 cross
 cross_country
-cross-selling
+cross_selling
 croupier
 cumbia
 cup
@@ -316,8 +315,7 @@ deck
 décor
 deficit
 degradé
-dégradé
-déjà-vu
+déjàvu
 delivery
 démarche
 démodé
@@ -327,7 +325,6 @@ designer
 dessert
 destroyer
 détente
-diesel
 diesel
 dirham
 discjockey
@@ -360,7 +357,7 @@ duplex
 ebook
 email
 ezine
-eau-de-toilette
+eau_de_toilette
 écarté
 écharpe
 éclair
@@ -422,9 +419,7 @@ flan
 flash
 flashback
 flat
-flat
-flint
-flip-flop
+flip_flop
 flipper
 flirt
 flop
@@ -455,8 +450,8 @@ froufrou
 fuel
 fugato
 führer
-full-time
-full-time
+full_time
+fulltime
 funboard
 funding
 funk
@@ -493,7 +488,6 @@ gneisse
 goal_average
 gobelet
 godet
-godet
 golf
 gong
 goodbye
@@ -528,7 +522,7 @@ hamster
 handicap
 handling
 happening
-hara-kiri
+hara_kiri
 hard
 hard_core
 hard_rock
@@ -539,10 +533,8 @@ henry
 hertz
 hi_fi
 hidrospeed
-high-tech
-hip-hop
-hippie
-hippie
+high_tech
+hiphop
 hippie
 hippy
 hit
@@ -550,7 +542,7 @@ hobby
 holding
 homo
 hooligan
-hors-d'oeuvre
+hors_d_oeuvre
 horseball
 horsepower
 hot
@@ -559,7 +551,7 @@ husky
 hydrofoil
 hype
 ibidem
-ice-cream
+ice_cream
 iceberg
 id
 igloo
@@ -567,7 +559,7 @@ impeachment
 impedimenta
 import_export
 in
-in-octavo
+in_octavo
 indoor
 influenza
 infotainment
@@ -587,15 +579,14 @@ jacuzzi
 jam_session
 jamboree
 jazz
-jazz
 jeans
 jeep
 jerrican
 jerrycan
 jersey
 jet
-jet-lag
-jet_set
+jet_lag
+jetset
 jetfoil
 jihad
 jingle
@@ -608,7 +599,6 @@ joker
 joule
 joystick
 jukebox
-junkie
 junkie
 junkie
 kabuki
@@ -631,7 +621,6 @@ kibutz
 kickboxer
 kickboxing
 kilim
-kilim
 kilobit
 kilobyte
 kilovolt
@@ -645,13 +634,10 @@ kirsch
 kit
 kitchenette
 kitsch
-kitsch
 kiwi
 kjökkenmödding
 klaxon
 kleenex
-knockout
-knockout
 knockout
 know_how
 kraft
@@ -666,8 +652,6 @@ kwashiorkor
 kyat
 lambert
 lamé
-lamé
-lamé
 laptop
 larghetto
 laser
@@ -678,7 +662,6 @@ leader
 leasing
 leasing
 led
-legato
 legato
 leitmotiv
 lek
@@ -701,7 +684,6 @@ lounge
 low_profile
 lycra
 maçon
-naïf
 naïf
 naïve
 napalm
@@ -748,7 +730,6 @@ maquis
 marchand
 marketing
 marron
-marron
 maser
 master
 match
@@ -781,7 +762,6 @@ miss
 mister
 modem
 moderato
-moderato
 modus
 mohair
 monokini
@@ -797,16 +777,14 @@ muezzin
 musichall
 mvdol
 oersted
-offline
 officeboy
 offline
 offset
 offshore
-offshore
 ohm
 ombudsman
 omertà
-on-line
+on_line
 online
 open
 opus
@@ -845,7 +823,7 @@ parquet
 parsec
 part_time
 partenaire
-passe-partout
+passe_partout
 passerelle
 passim
 password
@@ -861,8 +839,8 @@ perestroika
 performance
 performer
 petit_suisse
-phot
-photo-finish
+photo
+photo_finish
 photomaton
 pianoforte
 pick_up
@@ -907,10 +885,9 @@ poltergeist
 poodle
 pool
 pop
-pop
 popcorn
 portfolio
-post-it
+postit
 poster
 pot_pourri
 pouf
@@ -945,6 +922,7 @@ quilohertz
 rad
 raffiné
 rafting
+ragoût
 ragoût
 raid
 rail
@@ -1016,7 +994,6 @@ roulotte
 round
 router
 rubato
-rubato
 rugby
 sage
 sage
@@ -1051,7 +1028,7 @@ self_service
 serial_killer
 server
 set
-set-point
+setpoint
 setter
 seventies
 sexy
@@ -1114,14 +1091,11 @@ smorzando
 snack
 snack_bar
 sniper
-sniper
-snob
 snob
 snooker
 snowboard
 sobriquet
 soccer
-socialite
 socialite
 socquette
 soft
@@ -1162,7 +1136,6 @@ staccato
 staff
 stand
 standard
-standard
 standby
 star
 station
@@ -1182,9 +1155,7 @@ street
 stress
 strip
 stripper
-stripper
 striptease
-stripteaser
 stripteaser
 strogonoff
 sub_holding
@@ -1206,7 +1177,6 @@ taichi
 tailleur
 take
 take_off
-takeaway
 takeaway
 taliban
 talk_show
@@ -1270,11 +1240,13 @@ trottoir
 troupe
 trousse
 trust
+trust
 tsunami
 tugrik
 tupperware
 turbo_diesel
 turnover
+tutilimúndi
 tutilimúndi
 tutti
 tutu
@@ -1284,12 +1256,12 @@ twist
 tzar
 umlaut
 underground
-underground
 underwear
 unisex
 up_to_date
 upgrade
 valise
+vamp
 vamp
 van
 var
@@ -1324,7 +1296,7 @@ voucher
 voyeur
 wad
 waffle
-walkie-talkie
+walkie_talkie
 walkman
 warrant
 wasp
@@ -1345,7 +1317,6 @@ wild_card
 windsurf
 winner
 won
-workaholic
 workaholic
 workshop
 workstation
@@ -1369,5 +1340,6 @@ zekel
 zen
 zip
 zloty
+zombie
 zombie
 zoom
