@@ -8,6 +8,7 @@ HOW TO RUN THE ALGORITHM?
 1. Get the download git file folder;
 2. Open the file "OpClusterPT.py" (It's necessário some developement IDE and the Python (2 or 3)  installed);
 3. Check if all the input files is the same folder that the "OpClusterPT.py";
+4. Unzip the folders: "OntoPT.tar.xz" and "corp_xml_reli.zip";
 4. Run the algorithm.
 
 Ops. Was available a set of aspects and reviews that was been used in this master's degree work. However, if you need to apply this algorithm on another data, you need: 1. Download the CORP system - desktop version - (available here: https://www.inf.pucrs.br/linatural/wordpress/recursos-e-ferramentas/) and run it on the new dataset reviews. It will generate a set of XML files with the annotaed reviews. This files will be used as input in the OpCluster-PT; 2. Extract of aspects this reviews (with implicit and explicit aspects) that you wish to cluster. For this second task, you can use this system available here: https://github.com/raulnhl8/Extracao-e-qualificacao-de-aspectos-de-opiniao-para-o-portugues.
