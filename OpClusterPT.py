@@ -14,8 +14,9 @@ import unicodedata
 from BeautifulSoup import BeautifulSoup
 from bs4 import BeautifulSoup
 from rdflib import Graph, URIRef, Literal
+#-------------------------------------------------------------------------------------------
 
-#Vector, Dictionaries and Graph------------------------------------------------------------
+#Vector, Dictionaries and Graph
 part = rdflib.term.URIRef('http://ontopt.dei.uc.pt/OntoPT.owl#parteDe')
 temP = rdflib.term.URIRef('http://ontopt.dei.uc.pt/OntoPT.owl#temParte')
 resA = rdflib.term.URIRef('http://ontopt.dei.uc.pt/OntoPT.owl#resultadoDaAccao')
@@ -33,12 +34,12 @@ pos = ''
 unitarios = []
 
 
-#Reading the list of aspects (reading to input)--------------------------------------------------------
+#Reading the list of aspects 
 with open('exemplo_entrada.txt') as f:
     aspectos = f.read().lower().splitlines()
 
 
-#Set of functions---------------------------------------------------------------------------------------
+#Set of functions
 def busca_sinonimo(item_sinonimo):
     #Searching relatiosn into OntoPT graph = synonyms
     ontosim_busca = []
@@ -85,14 +86,14 @@ def busca_onto(onto_all):
     return onto_busca
 
 def busca_corp(item_corp):
-    #Searching the itens into Corp file processing
+    #Searching the itens into the files directory in XML that was processed and annotated by CORP
     bb = []
     aux0 = []
     item_corp_new = ''
     included_extenstions = []
     menU = 'Mencoes_Unicas'
     sn = 'sn'
-    #I'ts necessary to set where are the files (XML) processing by CORP
+    #I'ts necessary to set where are the files directory in XML that was processed and annotated by CORP
     relevant_path = 'corp_xml_reli'
     included_extenstions = ['xml']
 
@@ -110,7 +111,7 @@ def busca_corp(item_corp):
             tam_lista = len(y)
             lista = range(tam_lista)
 
-            #I get the number of groups from all directory files (XML)
+            #Get the number of groups from all directory files (XML)
             for j in lista:
                 if item.Cadeias.contents[j].name is not None:
                             
@@ -242,12 +243,12 @@ for i in list(aspectos):
         if (i in i2 and len(i) != len(i2)) or (i2 in i and len(i) != len(i2)):
             busca.append(i2)
         
-    #Itens que não foram encontrados em nenhuma das bases
+    #Aspects not found in either base
     #busca.append(i)
 
     busca = remove_repetidos(busca)
     
-    #Verifica a intersecção entre o vetor de busca e o vetor de aspectos----------------------------------
+    #Checks the intersection between search vector and aspect vector
     for jjj in busca[:]:
         for iii in aspectos[:]:
             if iii == jjj:
@@ -255,8 +256,7 @@ for i in list(aspectos):
                 remove_valores_da_lista(aspectos,iii)
 
                 #Busca novamente os itens add no vetor "grupo" a partir do último aspecto adicionado
-                #Porque se ele não pegar a última posição do vetor grupo, ele irá reclassficar dos os aspectos adicionado em "grupo"
-
+                #Porque se ele não pegar a última posição do vetor grupo, ele irá reclassficar os aspectos adicionado em "grupo"
                 for idd, (gr1, gr2) in enumerate(grupo):
 
                     #Aqui que ele pega a última posição do vetor, para que a reclassificação seja realizada sobre os aspectos de G(i) e não de G(full)
@@ -274,10 +274,10 @@ for i in list(aspectos):
                         #ESTRANGEIRISMO
                         busca_new.append(busca_estrangeirismo(gr2))        
                                     
-                        #Remove repetidos de busca_new
+                        #Remove the duplicates in "busca_new"
                         busca_new = remove_repetidos(busca_new) 
 
-                        #Verifica a intersecção entre os remanscentes e a lista de aspectos
+                        #Checks intersection between remnants and aspect vector
                         for bbb in busca_new[:]:
                             for aaa in aspectos[:]:
                                 if aaa == bbb:
@@ -285,7 +285,7 @@ for i in list(aspectos):
                                     remove_valores_da_lista(aspectos, aaa)
                                   
         
-    #Recupera a posição do último aspecto adicionado no vetor grupo
+    #Retrieves the position of the last aspect added in the group vector.
     pos = grupo[-1]
     n_pos = grupo.index(pos)
 
