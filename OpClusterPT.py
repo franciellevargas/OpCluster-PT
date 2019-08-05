@@ -35,7 +35,7 @@ unitarios = []
 
 
 #Reading the list of aspects 
-with open('exemplo_entrada.txt') as f:
+with open('aspectos_reli.txt') as f:
     aspectos = f.read().lower().splitlines()
 
 
@@ -44,6 +44,7 @@ def busca_sinonimo(item_sinonimo):
     #Searching relatiosn into OntoPT graph = synonyms
     ontosim_busca = []
     g = rdflib.Graph()
+   #Check if this file was unziped
     g.parse('OntoPT.rdf')
     for s,p,o in g:
         entrada = rdflib.term.Literal(item_sinonimo)
