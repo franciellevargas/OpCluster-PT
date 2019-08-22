@@ -1,4 +1,4 @@
-![Screenshot from 2019-08-22 12-36-57](https://user-images.githubusercontent.com/19657817/63529275-ccd5f780-c4da-11e9-9d2c-dce592d855e7.png) ![SCC-ICMC](https://user-images.githubusercontent.com/19657817/63529499-1f171880-c4db-11e9-9cc4-8151aa4e91ae.png)
+![Screenshot from 2019-08-22 12-36-57](https://user-images.githubusercontent.com/19657817/63529275-ccd5f780-c4da-11e9-9d2c-dce592d855e7.png) 
 
 # Opcluster-PT
 An Automatic Opinion Similar Aspect Clustering Tool for Aspects-Based Opinion Mining / Sentiment Analysis. 
