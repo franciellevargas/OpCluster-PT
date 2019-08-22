@@ -8,7 +8,7 @@ The Opcluster-PT is an algorithm for clustering of implicit and explicit aspects
 HOW TO RUN THE ALGORITHM?
 
 1. Get the download git file folder;
-2. Open the file "OpClusterPT.py" (It's necessário some developement IDE and the Python (2 or 3)  installed);
+2. Open the file "OpClusterPT.py" (It's necessário any developement IDE and the Python (2 or 3)  installed);
 3. Check if all the input files is in the same folder that the "OpClusterPT.py" file;
 4. Unzip the folders: "OntoPT.tar.xz" and "corp_xml_reli.zip";
 4. Run the algorithm.
