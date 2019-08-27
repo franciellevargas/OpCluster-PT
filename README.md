@@ -15,11 +15,27 @@ HOW TO RUN THE ALGORITHM?
 
 Ops. Was available also a set of aspects and labeled reviews that have been used in this master's degree work. However, if you need to apply this algorithm on another data, you need: 1. Download the CORP system - desktop version - (available here: https://www.inf.pucrs.br/linatural/wordpress/recursos-e-ferramentas/) and run it on the new dataset reviews. It will generate a set of XML files with the labeled reviews. This files will be used as input in the OpCluster-PT; 2. Extraction of aspects this reviews (with implicit and explicit aspects) that you wish to cluster. For this second task, you can use this system available here: https://github.com/raulnhl8/Extracao-e-qualificacao-de-aspectos-de-opiniao-para-o-portugues. With the OpCluster-PT you can extract the opinion too. So, To extract the opinion aspects you need first to undestand a litlle bit concepts of aspect-based opinion mining / sentiment analysis applications. If you domain is the products or book domain, you can use to extract the opinion aspects this aspects hierarchy in (OWL format) available here: http://conteudo.icmc.usp.br/pessoas/taspardo/sucinto/files/Ontologies-for-aspect-based-opinion-mining-master.zip. For to undestand a litlle bit more about aspect-based sentiment analysis for Portuguese, you can read this technical report: http://conteudo.icmc.usp.br/pessoas/taspardo/ or this full thesis http://www.teses.usp.br/teses/disponiveis/55/55134/tde-31072018-170236/en.php. Another resources for aspect-based sentiment analysis / opinion mining (Portuguese language) have been developed and availabled here: https://sites.google.com/icmc.usp.br/opinando/ .
 
-
-
-HOW CAN I CITE THIS ALGORITHM?
+CITING
 
 Vargas, F.A. and Pardo, T.A.S. (2018). Aspect clustering methods for sentiment analysis. In the Proceedings of the 13th International Conference on the Computational Processing of Portuguese (PROPOR) (LNAI 11122), pp. 365-374. September, 24-26. Canela-RS/Brazil. 
+
+BIBTEX
+
+@inproceedings{DBLP:conf/propor/MonteiroSPARV18,
+  author    = {Rafael A. Monteiro and
+               Roney L. S. Santos and
+               Thiago A. S. Pardo and
+               Tiago A. de Almeida and
+               Evandro E. S. Ruiz and
+               Oto A. Vale},
+  title     = {Aspect Clustering Methods for Sentiment Analysis},
+  booktitle = {Proceedings of the 13th International Conference, {PROPOR} 2018, Canela, Brazil, September 24-26, 2018,
+               Proceedings},
+  pages     = {365–374},
+  year      = {2018},
+  crossref  = {DBLP:conf/propor/2018},
+}
+
 
 ACKNOWLEGMENT
 
