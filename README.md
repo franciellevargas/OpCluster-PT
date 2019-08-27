@@ -22,7 +22,8 @@ HOW CAN I CITE THIS ALGORITHM?
 Vargas, F.A. and Pardo, T.A.S. (2018). Aspect clustering methods for sentiment analysis. In the Proceedings of the 13th International Conference on the Computational Processing of Portuguese (PROPOR) (LNAI 11122), pp. 365-374. September, 24-26. Canela-RS/Brazil. 
 
 ACKNOWLEGMENT
-Evandro Fonseca, author and developer of the CORP.
+
+Evandro Fonseca, author and developer of the CORP (resolução automática de correferências para o Português).
 
 
 
