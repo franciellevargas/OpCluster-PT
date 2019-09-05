@@ -39,7 +39,8 @@ BIBTEX
 
 ACKNOWLEGMENT
 
-Evandro Fonseca, author and developer of the CORP (resolução automática de correferências para o Português).
+Evandro Brasil Fonseca, author and developer of the CORP (resolução automática de correferências para o Português) 
+{https://www.linkedin.com/in/evandro-fonseca-a0394936/}.
 
 
 
