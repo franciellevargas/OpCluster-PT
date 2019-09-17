@@ -21,18 +21,14 @@ Vargas, F.A. and Pardo, T.A.S. (2018). Aspect clustering methods for sentiment a
 
 BIBTEX
 
-@inproceedings{DBLP:conf/propor/MonteiroSPARV18,
-  author    = {Rafael A. Monteiro and
-               Roney L. S. Santos and
-               Thiago A. S. Pardo and
-               Tiago A. de Almeida and
-               Evandro E. S. Ruiz and
-               Oto A. Vale},
+@inproceedings{DBLP:conf/propor/VargasAndPardo18,
+  author    = {Francielle A. Vargas and
+               Thiago A. S. Pardo},
   title     = {Aspect Clustering Methods for Sentiment Analysis},
-  booktitle = {Proceedings of the 13th International Conference, {PROPOR} 2018, Canela, Brazil, September 24-26, 2018,
-               Proceedings},
+  booktitle = {Proceedings of the 13th International Conference on the Computational Processing of Portuguese, {PROPOR} },
   pages     = {365–374},
   year      = {2018},
+  address   = {Canela, RS, Brazil},
   crossref  = {DBLP:conf/propor/2018},
 }
 
