@@ -13,7 +13,7 @@ HOW TO RUN THE ALGORITHM?
 4. Unzip the folders: "OntoPT.tar.xz" and "corp_xml_reli.zip";
 4. Run the algorithm.
 
--- Was available also a set of aspects and labeled reviews that have been used in this master's degree work. However, if you need to apply this algorithm on another data, you need: (1) Download the CORP system - desktop version - (available here: https://www.inf.pucrs.br/linatural/wordpress/recursos-e-ferramentas/) and run it on the new dataset reviews. It will generate a set of XML files with the labeled reviews. This files will be used as input in the OpCluster-PT; 
+-- It was available also a set of aspects and labeled reviews that have been used in this master's degree work. However, if you need to apply this algorithm on another data, you need: (1) Download the CORP system - desktop version - (available here: https://www.inf.pucrs.br/linatural/wordpress/recursos-e-ferramentas/) and run it on the new dataset reviews. It will generate a set of XML files with the labeled reviews. This files will be used as input in the OpCluster-PT. Will soon be availabe the Opcluster-PT 2.0 web version. 
 
 
 -- Adicional information about aspect-based sentiment analysis for Portuguese, you can read this technical report: http://conteudo.icmc.usp.br/pessoas/taspardo/ or this full thesis http://www.teses.usp.br/teses/disponiveis/55/55134/tde-31072018-170236/en.php. Another resources for aspect-based sentiment analysis / opinion mining (Portuguese Language) have been developed and availabled here: https://sites.google.com/icmc.usp.br/opinando/ .
