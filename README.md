@@ -1,4 +1,4 @@
-![SSC-logo-300x171](https://user-images.githubusercontent.com/19657817/63529693-77e6b100-c4db-11e9-9385-7d9b109427a2.png) ![Screenshot from 2019-08-22 12-36-57](https://user-images.githubusercontent.com/19657817/63529275-ccd5f780-c4da-11e9-9d2c-dce592d855e7.png) 
+![SSC-logo-300x171](https://user-images.githubusercontent.com/19657817/63529693-77e6b100-c4db-11e9-9385-7d9b109427a2.png) ![Screenshot from 2019-08-22 12-36-57](https://user-images.githubusercontent.com/19657817/63529275-ccd5f780-c4da-11e9-9d2c-dce592d855e7.png | width=80) 
 
 # Opcluster-PT
 Fine-grained opinion extraction and clustering tool. Opcluster-PT also allows the customization for other languages, being minimally necessary a lexical language resource as such as WordNet, deverbal, foreign, and superlative lexicons. OpCluster-PT is currently customized for the Portuguese language.
