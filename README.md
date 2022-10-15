@@ -1,7 +1,7 @@
 ![image](https://user-images.githubusercontent.com/19657817/183250300-0cd26336-b33e-4353-ba9d-31f6f36181da.png)
 
 
-<h2 align="center"> OpCluster - Automatic extraction and clustering of fine-grained opinions. </h2>  
+<h2 align="center"> OpCluster - Automatic extraction and clustering of fine-grained opinions </h2>  
 
 <p align="justify"> Fine-grained opinion extraction and clustering tool for opinion mining ans summarization. Opcluster-PT also allows the customization for other languages, being minimally necessary a lexical language resource as such as WordNet, deverbal, foreign, and superlative lexicons. OpCluster-PT is currently customized for the Portuguese language.
 
