@@ -22,7 +22,7 @@
 
 
 <p align="justify"> Adicional information can be obtained from my full Master's thesis available here: http://www.teses.usp.br/teses/disponiveis/55/55134/tde-31072018-170236/en.php. </p>
-
+<br>
 
 <h2 align="left"> CITING </h2>
 <p align="justify">
@@ -40,7 +40,7 @@ Vargas, F.A. and Pardo, T.A.S. (2018). <b>Aspect clustering methods for sentimen
   pages     = {365–374},
   year      = {2018},
   address   = {Canela, Brazil},
-  crossref  = {DBLP:conf/propor/2018},
+  crossref  = {DBLP:conf/propor/2018}
 }
 </p>
 
