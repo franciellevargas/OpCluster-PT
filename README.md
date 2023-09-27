@@ -1,7 +1,7 @@
 ![image](https://user-images.githubusercontent.com/19657817/183250300-0cd26336-b33e-4353-ba9d-31f6f36181da.png)
 
 
-<h2 align="center"> OpCluster - Automatic extraction and clustering of fine-grained opinions </h2>  
+<h2 align="center"> OpCluster - Automatic Extraction and Clustering of Fine-Grained Opinions </h2>  
 
 <p align="justify"> Fine-grained opinion extraction and clustering tool for opinion mining ans summarization. Opcluster-PT also allows the customization for other languages, being minimally necessary a lexical language resource as such as WordNet, deverbal, foreign, and superlative lexicons. OpCluster-PT is currently customized for the Portuguese language.
 
@@ -18,10 +18,11 @@
 4. Unzip the folders: "OntoPT.tar.xz" and "corp_xml_reli.zip";
 4. Run the algorithm.
 
-<p align="justify"> We also provide a set of aspects and annotated reviews that have been used in this master's degree work. However, if you need to apply this algorithm on another data, you need: (1) Download the CORP system - desktop version - (available here: https://www.inf.pucrs.br/linatural/wordpress/recursos-e-ferramentas/) and run it on the new dataset reviews. It will generate a set of XML files with the labeled reviews. This files will be used as input in the OpCluster-PT. Will soon be availabe the Opcluster-PT 2.0 web version </p?. 
+<p align="justify"> We also provide a set of aspects and annotated reviews that have been used in this master's degree work. However, if you need to apply this algorithm on another data, you need: (1) Download the CORP system - desktop version - (available here: https://www.inf.pucrs.br/linatural/wordpress/recursos-e-ferramentas/) and run it on the new dataset reviews. It will generate a set of XML files with the labeled reviews. This files will be used as input in the OpCluster-PT. Will soon be availabe the Opcluster-PT 2.0 web version </p>. 
 
-
-<p align="justify"> Adicional information can be obtained from my full Master's thesis available here: http://www.teses.usp.br/teses/disponiveis/55/55134/tde-31072018-170236/en.php. </p>
+<p align="justify"> Finally, adicional information can be obtained from my full Master's thesis available here: http://www.teses.usp.br/teses/disponiveis/55/55134/tde-31072018-170236/en.php. </p>
+<br>
+<b>The OpCluster web version is availabler here</b>: http://www.nilc.icmc.usp.br/opcluster/
 <br>
 
 <h2 align="left"> CITING </h2>
