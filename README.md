@@ -10,7 +10,7 @@
 </p>
 
 
-<h2 align="left"> HOW CAN I USE THE OPCLUSTER? </h2> 
+<h2 align="left"> HOW CAN YOU USE THE OPCLUSTER? </h2> 
 
 1. Get the download git file folder;
 2. Open the file "OpClusterPT.py" (It's necessário any developement IDE and the Python (2 or 3)  installed);
@@ -26,11 +26,12 @@
 
 <h2 align="left"> CITING </h2>
 <p align="justify">
-Vargas, F.A. and Pardo, T.A.S. (2018). Aspect clustering methods for sentiment analysis. In the Proceedings of the 13th International Conference on the Computational Processing of Portuguese (PROPOR) (LNAI 11122), pp. 365-374. September, 24-26. Canela-RS/Brazil. 
+Vargas, F.A. and Pardo, T.A.S. (2018). <b>Aspect clustering methods for sentiment analysis</b>. In the Proceedings of the 13th International Conference on the Computational Processing of Portuguese (PROPOR) (LNAI 11122), pp. 365-374. September, 24-26. Canela-RS/Brazil. 
 </p>
 
-BIBTEX
-
+<br>
+<h2 align="left"> BIBTEX </h2>
+<p align="justify">
 @inproceedings{DBLP:conf/propor/VargasAndPardo18,
   author    = {Francielle A. Vargas and
                Thiago A. S. Pardo},
@@ -41,7 +42,9 @@ BIBTEX
   address   = {Canela, Brazil},
   crossref  = {DBLP:conf/propor/2018},
 }
+</p>
 
+<br>
 
 <h2 align="left"> ACKNOWLEDGEMENT </h2>
 
