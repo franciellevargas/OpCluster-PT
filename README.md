@@ -9,7 +9,7 @@
 </p>
 
 
-<h2 align="left"> HOW CAN YOU USE THE OPCLUSTER? </h2> 
+<h2 align="left"> HOW DO YOU USE THE OPCLUSTER? </h2> 
 
 1. Get the download git file folder;
 2. Open the file "OpClusterPT.py" (It's necessário any developement IDE and the Python (2 or 3)  installed);
