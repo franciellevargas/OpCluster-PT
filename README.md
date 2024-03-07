@@ -44,10 +44,10 @@ Vargas, F.A. and Pardo, T.A.S. (2018). <b>Aspect clustering methods for sentimen
 
 <br>
 
-<h2 align="left"> ACKNOWLEDGEMENT </h2>
+<h2 align="left"> FUNDING </h2>
 
 <p align="justify">
 
-The authors are grateful to CAPES, FAPESP and USP Research Office for supporting this work.
+  ![SSC-logo-300x171](https://github.com/franciellevargas/HateBR/blob/e5ccb9cd6b43c26edacb2c4abd32fd75f8a574a2/.github/logo_novo_english.gif) 
 
 </p>
