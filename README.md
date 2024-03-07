@@ -2,7 +2,7 @@
 
 <h2 align="center"> OpCluster - Automatic Extraction and Clustering of Fine-Grained Opinions </h2>  
 
-<p align="justify"> OpCluster-pt is currently customized for the Portuguese language.
+<p align="justify"> OpCluster-pt is a customized version of OpCluster for the Portuguese language.
 
 <p align="justify"> The Opcluster is an algorithm for hierarchical clustering of implicit and explicit fine-grained opinions (also called aspects). This method provides the automatic organization of similar  implicit and explicit aspects (considering the context of use)  from web consumer reviews within a tree. For example, in the review passage, “she considered the camera price very expensive”, the consumer employed the term “price” to evaluate an aspect of the camera; however, consumers might also use the terms “cost”, “value”, “investment”, etc. In addition, consumers may use implicit or explicit aspects to refer to the same aspect, e.g., the sentences “she got calls at the São Francisco river” and “working anywhere” have been employed in actual reviews to evaluate the (implicit) “signal” aspect of a smartphone. It is also interesting to notice that, in some domains, proper names may be employed to refer to the aspects. For instance, the proper names “Sony” and “Nikon” may be used to evaluate the “product brand” aspect of digital cameras. </p>
 
