@@ -38,7 +38,7 @@ Vargas, F.A. and Pardo, T.A.S. (2018). <b>Aspect clustering methods for sentimen
   pages     = {365–374},
   year      = {2018},
   address   = {Canela, Brazil},
-  crossref  = {DBLP:conf/propor/2018}
+  url       = {https://link.springer.com/chapter/10.1007/978-3-319-99722-3_37}
 }
 </p>
 
