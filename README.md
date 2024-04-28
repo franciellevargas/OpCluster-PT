@@ -12,7 +12,7 @@
 <h2 align="left"> HOW DO YOU USE THE OPCLUSTER? </h2> 
 
 1. Get the download git file folder;
-2. Open the file "OpClusterPT.py" (It's necessário any developement IDE and the Python (2 or 3)  installed);
+2. Open the file "OpClusterPT.py" (It's necessary any IDE and the Python Version 2 or 3  installed);
 3. Check if all the input files are in the same folder as the "OpClusterPT.py" file;
 4. Unzip the folders: "OntoPT.tar.xz" and "corp_xml_reli.zip";
 4. Run the algorithm.
