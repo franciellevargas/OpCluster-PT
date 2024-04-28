@@ -24,7 +24,7 @@
 
 <h2 align="left"> CITING </h2>
 <p align="justify">
-Vargas, F.A. and Pardo, T.A.S. (2018). <b>Aspect clustering methods for sentiment analysis</b>. Proceedings of the 13th International Conference on the Computational Processing of Portuguese (PROPOR) (LNAI 11122), pp. 365-374. September, 24-26. Canela-RS/Brazil. 
+Vargas, F.A. and Pardo, T.A.S. (2018). <b>Aspect clustering methods for sentiment analysis</b>. Proceedings of the 13th International Conference on the Computational Processing of Portuguese (PROPOR). pp. 365-374. Canela-RS/Brazil. 
 </p>
 
 <br>
