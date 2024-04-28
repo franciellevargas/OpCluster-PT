@@ -17,9 +17,9 @@
 4. Unzip the folders: "OntoPT.tar.xz" and "corp_xml_reli.zip";
 4. Run the algorithm.
 
-<p align="justify"> We also provide a set of aspects and annotated reviews that have been used in this master's degree work. However, if you need to apply this algorithm to other data, you need: (1) Download the CORP system - desktop version - (available here: https://www.inf.pucrs.br/linatural/wordpress/recursos-e-ferramentas/) and run it on the new dataset reviews. It will generate a set of XML files with the labeled reviews. These files will be used as input in the OpCluster-PT. Will soon be available the Opcluster-PT 2.0 web version. Finally, additional information can be obtained from my full Master's thesis available here: http://www.teses.usp.br/teses/disponiveis/55/55134/tde-31072018-170236/en.php. </p>
+<p align="justify"> We also provide a set taxonomies of aspects and annotated reviews that were used in this master's degree work. However, if you need to apply this algorithm to other data, you need: (1) Download the CORP system - desktop version - (available here: https://www.inf.pucrs.br/linatural/wordpress/recursos-e-ferramentas/) and run it on the new dataset reviews. It will generate a set of XML files with the labeled reviews. These files will be used as input in the OpCluster-PT. Will soon be available the Opcluster-PT 2.0 web version. Finally, additional information can be obtained from my full Master's thesis available here: http://www.teses.usp.br/teses/disponiveis/55/55134/tde-31072018-170236/en.php. </p>
 <br>
-<b>The OpCluster web version is available here</b>: http://www.nilc.icmc.usp.br/opcluster/
+<b>The OpCluster-PT web version is available here</b>: http://www.nilc.icmc.usp.br/opcluster/
 <br>
 
 <h2 align="left"> CITING </h2>
