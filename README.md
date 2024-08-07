@@ -47,7 +47,7 @@ Vargas, F.A. and Pardo, T.A.S. (2018). <b>Aspect clustering methods for sentimen
 
 <h2 align="left"> FUNDING </h2>
 
-![SSC-logo-300x171](https://github.com/franciellevargas/franciellevargas.github.io/blob/8e4966fe32f22b785b2fbcb99d8bfb7caac18b29/img/icmc-logo.png)
+![SSC-logo-300x171](https://github.com/franciellevargas/franciellevargas.github.io/blob/bf14bd4049c2bb7a56b30eaca5e26804f491ed89/img/icmc-logo-pequena.png)
 ![SSC-logo-300x171](https://github.com/franciellevargas/franciellevargas.github.io/blob/8e4966fe32f22b785b2fbcb99d8bfb7caac18b29/img/nilc-logo.png)
 ![SSC-logo-300x171](https://github.com/franciellevargas/franciellevargas.github.io/blob/8e4966fe32f22b785b2fbcb99d8bfb7caac18b29/img/cnpq-capes.png)
 
